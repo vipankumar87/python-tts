@@ -1,4 +1,4 @@
-Django>=3.2
-Markdown==3.3.4
+Django
+Markdown
 requests
 bleach
