@@ -18,4 +18,5 @@ from django.urls import path
 
 urlpatterns = [
     path('secure/', admin.site.urls),
+    path('api/', admin.site.urls),
 ]
