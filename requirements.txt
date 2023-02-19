@@ -2,3 +2,4 @@ Django
 Markdown
 requests
 bleach
+psycopg2

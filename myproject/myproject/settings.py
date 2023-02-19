@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a02k&&9ny$jn=*)hx=t!_ze6tcimeq-3b#tmn@!a4z3^g(_u5e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tts.animato']
 
 
 # Application definition
@@ -75,9 +75,17 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'adonis_app', 
+        'USER': 'postgres', 
+        'PASSWORD': 'postgres',
+        'HOST': '172.17.0.1', 
+        'PORT': '5433',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 
